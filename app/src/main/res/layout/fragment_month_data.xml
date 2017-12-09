@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iaq_pm"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <LinearLayout
+                android:id="@+id/pm_month_chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_pm_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textSize="23sp"/>
+        </RelativeLayout>
+        <!--
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/pm_month_chart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+            -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <LinearLayout
+                android:id="@+id/temp_month_chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_temp_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textSize="23sp"/>
+        </RelativeLayout>
+        <!--
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/temp_day_chart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+            -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/humidity"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <LinearLayout
+                android:id="@+id/humidity_month_chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_humidity_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:textSize="23sp"/>
+        </RelativeLayout>
+        <!--
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/humidity_day_chart"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+        -->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/statistic">
+
+    <include
+        android:id="@+id/header_menu"
+        layout="@layout/layout_header_menu"/>
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/previous"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <com.honeywell.iaq.widget.NoScrollViewPager
+        android:id="@+id/weather_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/weather_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

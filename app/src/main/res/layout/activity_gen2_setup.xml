@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.SoftInputAdjustTopView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_gen2_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/iaq_bg">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <TextView
+        android:id="@+id/title_text2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/network_setup_body_font_size" />
+
+    <ImageView
+        android:id="@+id/guide_iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/gen2_guide1" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/bottom_button_style"
+        android:enabled="false"
+        android:text="@string/next" />
+
+</com.honeywell.iaq.widget.SoftInputAdjustTopView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.SoftInputAdjustTopView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_text_style"
+            android:text="@string/validation_code" />
+
+        <EditText
+            android:id="@+id/register_validation_code"
+            style="@style/edit_text_style"
+            android:hint="@string/validation_code"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/title_text_style"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/register_pwd"
+            style="@style/edit_text_style"
+            android:hint="@string/password_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+
+        <TextView
+            style="@style/title_text_style"
+            android:text="@string/confirm_password" />
+
+        <EditText
+            android:id="@+id/confirm_register_pwd"
+            style="@style/edit_text_style"
+            android:hint="@string/confirm_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/get_validation_code_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/get_validation_code_again"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/get_validation_code_success"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/bottom_button_style"
+        android:enabled="false"
+        android:text="@string/register" />
+</com.honeywell.iaq.widget.SoftInputAdjustTopView>

@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/header">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/edit_home_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/cp_gray"
+                            android:text="@string/setting_edit_home" />
+
+                        <TextView
+                            android:id="@+id/edit_home_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/edit_home_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/forward_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_clock"
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/clock_setting_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/iaq_clock" />
+
+                    <ImageView
+                        android:id="@+id/clock_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/forward_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_standby"
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/standby_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/iaq_standby" />
+
+                    <ImageView
+                        android:id="@+id/standby_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/forward_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_temperature_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_temperature_unit" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/setting_celsius_unit" />
+
+
+                        <CheckBox
+                            android:id="@+id/cb_celsius"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/checkbox_to_radiobutton"
+                            android:button="@null" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/setting_fahrenheit_unit" />
+
+
+                        <CheckBox
+                            android:id="@+id/cb_fahrenheit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/checkbox_to_radiobutton"
+                            android:button="@null" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+
+                    android:background="@color/header_divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sleep_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_sleep_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/checkbox_auto_control_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/tv_sleep_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/cb_sleep_mode"
+                        android:text="@string/setting_sleep_mode" />
+
+                    <ImageView
+                        android:id="@+id/sleep_mode_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cb_sleep_mode"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/forward_arrow" />
+
+                    <TextView
+                        android:id="@+id/tv_start_stop_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/sleep_mode_forward"
+                        android:layout_below="@id/cb_sleep_mode"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_shut_down_led"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/tv_sleep_mode"
+                        android:layout_alignBottom="@id/tv_start_stop_time"
+                        android:text="@string/sleep_shut_down_led" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_save_power_mode"
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_save_power_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_save_power_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/save_power_mode" />
+
+                    <CheckBox
+                        android:id="@+id/cb_save_power_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/checkbox_auto_control_style"
+                        android:button="@null" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/device_serialNum_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/serial_number" />
+
+                        <TextView
+                            android:id="@+id/device_serialNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/device_serialNum_title"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/remove_iaq" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/header_divider_color" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_remove_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/remove"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/noon_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/text_color1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/clock_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/noon_tv"
+        android:layout_toRightOf="@id/noon_tv"
+        android:textColor="@color/text_color1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/clock_freq_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noon_tv"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_color1"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/clock_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/checkbox_auto_control_style"
+        android:button="@null" />
+
+</RelativeLayout>

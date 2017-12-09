@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/pmView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/pm25_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/iaq_pm" />
+
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_pm25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pm25_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pm25_title"
+                android:layout_marginStart="5dp"
+                android:text="@string/pm_unit"
+                android:textColor="@color/chart_green_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pm25_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_pm25"
+                android:layout_alignEnd="@id/line_chart_pm25"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_green_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/temPeratureView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/temperature_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/temperature" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/temperature_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperature_title"
+                android:layout_marginStart="10dp"
+                android:text="@string/temperature_unit"
+                android:textColor="@color/chart_yellow_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/temperature_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_temperature"
+                android:layout_alignEnd="@id/line_chart_temperature"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_yellow_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/humidityView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/humidity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/humidity" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/humidity_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/humidity_title"
+                android:layout_marginStart="10dp"
+                android:text="@string/percent"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/humidity_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_humidity"
+                android:layout_alignEnd="@id/line_chart_humidity"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/firstView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/extra_first_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/hcho" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_extra_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/extra_first_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extra_first_title"
+                android:layout_marginStart="10dp"
+                android:text="@string/percent"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/extra_first_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_extra_first"
+                android:layout_alignEnd="@id/line_chart_extra_first"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/secondView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/extra_second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/co2" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_extra_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/extra_second_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extra_second_title"
+                android:layout_marginStart="10dp"
+                android:text="@string/percent"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/extra_second_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_extra_second"
+                android:layout_alignEnd="@id/line_chart_extra_second"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/thirdView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:id="@+id/extra_third_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tvoc" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart_extra_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extra_third_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extra_third_title"
+                android:layout_marginStart="10dp"
+                android:text="@string/percent"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/extra_third_day_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/line_chart_extra_third"
+                android:layout_alignEnd="@id/line_chart_extra_third"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/day_unit"
+                android:textColor="@color/chart_blue_color"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</com.honeywell.iaq.widget.CustomScrollView>

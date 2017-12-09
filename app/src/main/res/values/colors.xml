@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ezconfig_color">#4e6cef</color>
+    <color name="white">#ffffffff</color>
+    <color name="opacity_white">#ccffffff</color>
+    <color name="opacity_high_white">#b0ffffff</color>
+    <color name="opacity_low_white">#e3ffffff</color>
+    <color name="dark">#242424</color>
+    <color name="pale_green">#09ffa2</color>
+    <color name="transparent_20">#33000000</color>
+
+    <color name="drawer_background">#fff</color>
+    <color name="accent_color">#333</color>
+
+    <color name="divider_dark">#444</color>
+
+    <color name="button_disabled">#D7D7D7</color>
+    <color name="button_disabled_dark">@color/empty_text_dark</color>
+    <color name="dark_background">#242424</color>
+    <color name="button_background">#1792E5</color>
+    <color name="text_73">#737373</color>
+    <color name="background1">#f5f5f5</color>
+
+    <color name="empty_text">#C7C7C7</color>toolbar_title_text_color1
+    <color name="empty_text_dark">#575757</color>
+
+    <color name="color_primary">#ddd</color>
+    <color name="color_primary_dark">#f2f2f2</color>
+    <color name="toolbar_title_text_color1">#808080</color>
+    <color name="toolbar_title_text_color">#606060</color>
+    <color name="text_color1">#707070</color>
+    <color name="FloatingActionButton_background">#c41411</color>
+    <color name="body_text_blue">#00BFFF</color>
+
+    <color name="body_text">#303030</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+
+    <color name="header_divider_color">#ABABAB</color>
+    <color name="edittext_bg_color">#CCCCCC</color>
+    <color name="activity_bg">#F4F4F4</color>
+    <color name="btn_background_blue">#1770D7</color>
+    <color name="btn_background_blue_pressed">#1770D7</color>
+    <color name="btn_background_disable">#CACACA</color>
+    <color name="text_color_hint">#C8C8C8</color>
+    <color name="edit_title_text_color">#9C9C9C</color>
+
+    <color name="chart_green_color">#98c260</color>
+    <color name="chart_green_color_transparent">#0098c260</color>
+    <color name="chart_yellow_color">#f58c4d</color>
+    <color name="chart_yellow_color_transparent">#00f58c4d</color>
+    <color name="chart_blue_color">#45a8ea</color>
+    <color name="chart_blue_color_transparent">#0045a8ea</color>
+
+    <!--pollution bg color-->
+    <color name="fresh">#a61792E5</color>
+    <color name="good">#a67EB338</color>
+    <color name="light_pollution">#a6FFC627</color>
+    <color name="mid_pollution">#a6F37022</color>
+    <color name="high_pollution">#a6EE3124</color>
+    <color name="serious_pollution">#a69B59B6</color>
+
+    <!--pollution bg color-->
+    <color name="pm_text_fresh">#0A4166</color>
+    <color name="pm_text_good">#385019</color>
+    <color name="pm_text_light_pollution">#715812</color>
+    <color name="pm_text_mid_pollution">#6B330F</color>
+    <color name="pm_text_high_pollution">#641610</color>
+    <color name="pm_text_serious_pollution">#452851</color>
+
+    <color name="iaq_bg">#F3F3F3</color>
+
+    <color name="cp_colorAccent">#F3F3F3</color>
+    <color name="cp_colorPrimary">@color/cp_colorAccent</color>
+    <color name="cp_colorPrimaryDark">@color/cp_colorAccent</color>
+
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">@color/cp_colorAccent</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+
+    <!--MessageBox-->
+    <color name="group_edit_text">#222222</color>
+    <color name="gray_line">#999999</color>
+    <color name="button_press_default">#b4f5f5f5</color>
+    <color name="blue_default">#f5f5f5</color>
+    <color name="blue">#18abe1</color>
+    <color name="black">#000000</color>
+    <color name="title_grey">#F7F7F7</color>
+
+
+</resources>

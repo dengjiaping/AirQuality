@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_splash_1080p">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_register"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_tip" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/login"
+            android:textColor="@color/body_text_blue" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:layout_marginRight="@dimen/margin_start_end"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg"
+
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

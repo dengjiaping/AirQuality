@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/iaq_settings"
+    android:persistent="false">
+
+    <EditTextPreference
+        android:key="iaq_home"
+        android:title="@string/name_home"
+        android:summary="@string/home_name"
+        android:persistent="false"/>
+
+    <EditTextPreference
+        android:key="iaq_room"
+        android:title="@string/room_title"
+        android:summary="@string/room"
+        android:persistent="false"/>
+
+    <!--
+    <Preference
+        android:key="network_problem"
+        android:title="@string/network_problem"
+        android:persistent="false"/>
+    -->
+
+    <Preference
+        android:key="remove"
+        android:title="@string/remove"
+        android:summary="@string/remove_iaq"
+        android:persistent="false"/>
+
+    <Preference
+        android:key="serial_number"
+        android:title="@string/serial_number"
+        android:persistent="false"/>
+
+</PreferenceScreen> 

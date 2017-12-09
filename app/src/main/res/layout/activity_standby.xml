@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <TextView
+        android:id="@+id/choose_standby_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:text="@string/choose_standby_display_content"
+        android:textColor="@color/fresh"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btn_save_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/save_clock"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choose_standby_tv"
+        android:layout_above="@id/btn_save_choose"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/choose_parameter_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/choose_parameter_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/choose_parameter_iv"
+                android:layout_alignBottom="@id/choose_parameter_iv"
+                android:text="@string/display_parameter"
+                android:textSize="16sp"
+                android:textColor="@color/fresh" />
+
+            <ImageView
+                android:id="@+id/parameter_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_parameter_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/standby_data" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/choose_time_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/choose_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/choose_time_iv"
+                android:layout_alignBottom="@id/choose_time_iv"
+                android:text="@string/display_time"
+                android:textSize="16sp"
+                android:textColor="@color/fresh" />
+
+            <ImageView
+                android:id="@+id/time_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_time_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/standby_time" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

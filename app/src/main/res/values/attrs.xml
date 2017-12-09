@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EditTextItem">
+        <attr name="eti_title" format="string"/>
+        <attr name="eti_text" format="string"/>
+        <attr name="eti_hint" format="string"/>
+    </declare-styleable>
+</resources>

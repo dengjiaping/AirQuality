@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cp_content_bg">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+
+    <include layout="@layout/cp_view_search"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/listview_all_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+
+        <ListView
+            android:id="@+id/listview_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:visibility="gone"/>
+
+        <include layout="@layout/cp_view_no_search_result" />
+    </RelativeLayout>
+</LinearLayout>

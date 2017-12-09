@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <ImageView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/network_setup_step_top"
+        android:src="@mipmap/step3" />
+
+    <TextView
+        android:id="@+id/link_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:text="@string/iaq_cloud_connect_description"
+        android:textColor="@color/body_text_blue"
+        android:textSize="@dimen/network_setup_body_font_size" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/loading"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="@dimen/network_setup_textview_top"/>-->
+    <com.honeywell.lib.widgets.CircleWaveView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/network_setup_textview_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:background="@mipmap/split_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20sp"
+        android:text="@string/check_iaq_progress"
+        android:textSize="@dimen/network_setup_body_font_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/wifi_bright" />
+
+            <TextView
+                android:id="@+id/iaq_wifi_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/network_setup_body_font_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/cloud_bright" />
+
+            <TextView
+                android:id="@+id/iaq_cloud_connected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/network_setup_body_font_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

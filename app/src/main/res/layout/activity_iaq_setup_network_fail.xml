@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <ImageView
+        android:id="@+id/step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/network_setup_step_top"
+        android:src="@mipmap/step3" />
+
+    <TextView
+        android:id="@+id/configure_iaq_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:text="@string/check_iaq"
+        android:textSize="@dimen/network_setup_body_font_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_failed_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/configure_iaq_fail"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/wifi_indicator_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_bg"
+            android:text="@string/iaq_wifi_connect_fail"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/wifi_indicator_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/iaq_wifi_connected"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/cloud_indicator_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/iaq_cloud_connected"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingStart="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_failed_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/icon_wifi"
+            android:text="@string/wifi_lamp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/icon_cloud"
+            android:text="@string/cloud_lamp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

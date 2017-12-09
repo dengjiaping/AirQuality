@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:id="@+id/clock_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <com.honeywell.iaq.clock.view.wheel.WheelView
+            android:id="@+id/hour_wheel"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <com.honeywell.iaq.clock.view.wheel.WheelView
+            android:id="@+id/minute_wheel"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <com.honeywell.iaq.clock.view.wheel.WheelView
+            android:id="@+id/noon_wheel"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/freq_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock_wheel"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/repeat_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/repeat"
+            android:textSize="18sp"
+            android:textColor="@color/toolbar_title_text_color1"/>
+
+        <ImageView
+            android:id="@+id/clock_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_forward_white" />
+
+        <TextView
+            android:id="@+id/freq_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/clock_forward"
+            android:text="@string/everyday"
+            android:textSize="15sp"
+            android:textColor="@color/pickerview_wheelview_textcolor_out"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/save_clock"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

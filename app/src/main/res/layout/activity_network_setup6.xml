@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.SoftInputAdjustTopView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_network_setup6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+
+    <ImageView
+        android:id="@+id/step1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/network_setup_step_top"
+        android:src="@mipmap/step1"/>
+
+    <TextView
+        android:id="@+id/title_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:text="@string/iaq_connected"
+        android:textSize="@dimen/network_setup_body_font_size"/>
+
+    <ImageView
+        android:id="@+id/image_wifi_settings"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/title_text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/iaq_connected"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/bottom_button_style"
+        android:text="@string/next"/>
+
+</com.honeywell.iaq.widget.SoftInputAdjustTopView>

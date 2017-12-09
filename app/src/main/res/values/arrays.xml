@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="country_codes" tools:ignore="MissingTranslation">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="preferences_front_light_values" tools:ignore="MissingTranslation">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+
+
+    <string-array name="language_code">
+        <item>zh-CN</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+        <item>en-US</item>
+    </string-array>
+    <string-array name="countries_name">
+        <item>@string/china</item>
+        <item>@string/brazil</item>
+        <item>@string/brunei</item>
+        <item>@string/dubai</item>
+        <item>@string/india</item>
+        <item>@string/indonesia</item>
+        <item>@string/malaysia</item>
+        <item>@string/philippines</item>
+        <item>@string/singapore</item>
+        <item>@string/turkey</item>
+        <item>@string/us</item>
+        <item>@string/iran</item>
+        <item>@string/hangkang</item>
+        <item>@string/macao</item>
+        <item>@string/taiwan</item>
+    </string-array>
+    <string-array name="countries_code">
+        <item>+86</item>
+        <item>+55</item>
+        <item>+673</item>
+        <item>+971</item>
+        <item>+91</item>
+        <item>+62</item>
+        <item>+60</item>
+        <item>+63</item>
+        <item>+65</item>
+        <item>+90</item>
+        <item>+1</item>
+        <item>+98</item>
+        <item>+852</item>
+        <item>+853</item>
+        <item>+886</item>
+    </string-array>
+    <array name="countries_icon">
+        <item>@mipmap/china48</item>
+        <item>@mipmap/brazil</item>
+        <item>@mipmap/brunei</item>
+        <item>@mipmap/dubai</item>
+        <item>@mipmap/india</item>
+        <item>@mipmap/indonesia</item>
+        <item>@mipmap/malaysia</item>
+        <item>@mipmap/philippines</item>
+        <item>@mipmap/singapore</item>
+        <item>@mipmap/turkey</item>
+        <item>@mipmap/us</item>
+        <item>@mipmap/iran</item>
+        <item>@mipmap/hongkong</item>
+        <item>@mipmap/macao</item>
+        <item>@mipmap/taiwan</item>
+    </array>
+
+    <string-array name="sliding_menu_left_title">
+        <item>@string/add_iaq</item>
+        <!--<item>@string/data_explain</item>-->
+        <item>@string/about</item>
+        <item>@string/logout</item>
+    </string-array>
+    <array name="sliding_menu_left_icon">
+        <item>@mipmap/menu_add</item>
+        <!--<item>@mipmap/menu_about</item>-->
+        <item>@mipmap/menu_about</item>
+        <item>@mipmap/menu_logout</item>
+    </array>
+</resources>

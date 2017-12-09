@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pm_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="良好"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/parameter_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textColor="@color/dark"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/parameter_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/parameter_value"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/parameter_value"
+            android:text="@string/pm_unit"
+            android:textColor="@color/text_73"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/parameter_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/parameter_unit"
+            android:layout_alignLeft="@+id/parameter_unit"
+            android:text="@string/pm"
+            android:textColor="@color/toolbar_title_text_color"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tep" />
+
+        <TextView
+            android:id="@+id/device_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/icon_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/icon_humidity" />
+
+        <TextView
+            android:id="@+id/humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pm_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm_status"
+        android:gravity="top|center_horizontal">
+
+        <TextView
+            android:id="@+id/parameter_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_pm"
+            android:textColor="@color/dark"
+            android:textSize="90sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/parameter_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/parameter_value"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/parameter_value"
+            android:text="@string/pm_unit"
+            android:textColor="@color/text_73"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/parameter_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/parameter_unit"
+            android:layout_alignLeft="@+id/parameter_unit"
+            android:text="@string/pm"
+            android:textColor="@color/toolbar_title_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/pm_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/parameter_type"
+            android:layout_alignLeft="@+id/parameter_type"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pm"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tem_hum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/ll_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/icon_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tep" />
+
+        <TextView
+            android:id="@+id/device_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/icon_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/icon_humidity" />
+
+        <TextView
+            android:id="@+id/humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

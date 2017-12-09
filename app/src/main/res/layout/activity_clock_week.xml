@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/monday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_monday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/monday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tuesday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_tuesday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/tuesday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wednesday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_wednesday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/wednesday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/thursday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_thursday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/thursday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/friday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_friday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/friday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/saturday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_saturday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/saturday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sunday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/every_sunday"
+                android:textSize="18sp"
+                android:textColor="@color/toolbar_title_text_color1"/>
+
+            <ImageView
+                android:id="@+id/sunday_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/day_select"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.honeywell.iaq.activity.MyIaqActivity"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+
+    <fragment
+        android:id="@+id/iaq_setting_frag"
+        android:name="com.honeywell.iaq.activity.MyIaqActivity$IaqSettingFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        tools:layout="@xml/fragment_my_iaq"/>
+
+</LinearLayout>

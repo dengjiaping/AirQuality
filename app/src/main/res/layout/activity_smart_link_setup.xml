@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.SoftInputAdjustTopView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_ap_link"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/step1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginTop="@dimen/network_setup_step_top"-->
+                <!--android:src="@mipmap/step2" />-->
+
+            <TextView
+                android:id="@+id/configure_iaq_wifi_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/network_setup_textview_top"
+                android:text="@string/configure_iaq_wifi_message"
+                android:textColor="@color/body_text_blue"
+                android:textSize="@dimen/network_setup_body_font_size" />
+
+            <ImageView
+                android:id="@+id/network_connect"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/network_setup_textview_top"
+                android:src="@mipmap/image_wifi_connectting" />
+
+            <TextView
+                style="@style/title_text_style"
+                android:layout_marginTop="@dimen/network_setup_textview_top"
+                android:text="@string/ssid" />
+
+            <EditText
+                android:id="@+id/ap_link_ssid"
+                style="@style/edit_text_style"
+                android:hint="@string/input_ssid"
+                android:imeOptions="actionNext" />
+
+            <TextView
+
+                style="@style/title_text_style"
+                android:text="@string/network_password" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_frame"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/ap_link_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/input_pwd"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:textColorHint="@color/text_color_hint" />
+
+                <CheckBox
+                    android:id="@+id/ch_wifi_pwd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/sixteen_text_style"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/link_notice" />
+
+                <TextView
+                    style="@style/sixteen_text_style"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/link_only_2.4g" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_connect"
+        style="@style/bottom_button_style"
+        android:text="@string/start_connect" />
+
+</com.honeywell.iaq.widget.SoftInputAdjustTopView>

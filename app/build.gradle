@@ -1,0 +1,153 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
+apply plugin: 'org.sonarqube'
+
+//计算当前的日期，给打包修改名称用
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getDefault())
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.honeywell.iaq"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 4
+        versionName "2.3.0"
+        multiDexEnabled true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        debug {
+            storeFile file("IAQ_sign.jks")
+            storePassword "HON123well"
+            keyAlias "IAQRelease"
+            keyPassword "HON123well"
+        }
+        release {
+            //这样写就得把demo.jk文件放在项目目录
+            storeFile file("IAQ_sign.jks")
+            storePassword "HON123well"
+            keyAlias "IAQRelease"
+            keyPassword "HON123well"
+        }
+    }
+
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def file = output.outputFile
+//            output.outputFile = new File(file.parent, file.name.replace(".apk", "-" + defaultConfig.versionName + ".apk"))
+//        }
+//    }
+
+    //更改输出的apk的文件名称
+    applicationVariants.all { variant ->
+
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            // 统一命名打包好的正式渠道包（命名规则自定）
+            println(outputFile)
+            if (outputFile != null && outputFile.name.endsWith('-release.apk')) {
+                // 输出apk名称示例为mc_V1.0_2015062211_android.apk
+                def fileName = "IAQ_${versionName}_${releaseTime()}.apk"
+                println("生成" + fileName + "")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+
+        }
+
+    }
+
+
+
+
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "NET_DEBUG", "true"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "NET_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            proguardFiles 'proguard-android.txt', 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile project(':asynchttp')
+    compile project(':library')
+    compile project(':com.honeywell.net')
+    compile files('libs/smartconfiglib2.jar')
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'de.greenrobot:eventbus:2.4.0'
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "https://sonarqube.honeywell.com/" //我本地SonarQube平台的配置
+        property "sonar.login", "E573227"
+        property "sonar.password", "HON777well"
+        property "sonar.projectName", "Next Gen IAQ" //projectname
+        property "sonar.projectKey", "2HAQ" //projectkey
+        property "sonar.language", "java" //语言
+        property "sonar.sourceEncoding", "UTF-8" //编码
+        property "sonar.sources", "src/main/java/com/honeywell/iaq/clock,src/main/java/com/honeywell/iaq/application,src/main/java/com/honeywell/iaq/base,src/main/java/com/honeywell/iaq/bean,src/main/java/com/honeywell/iaq/controller,src/main/java/com/honeywell/iaq/db,src/main/java/com/honeywell/iaq/events,src/main/java/com/honeywell/iaq/fragment,src/main/java/com/honeywell/iaq/interfaces,src/main/java/com/honeywell/iaq/service,src/main/java/com/honeywell/iaq/smartlink,src/main/java/com/honeywell/iaq/task,src/main/java/com/honeywell/iaq/widget"
+        property "sonar.projectVersion", "1.0.0" //版本，随意
+    }
+}

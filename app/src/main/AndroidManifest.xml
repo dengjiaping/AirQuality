@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.honeywell.iaq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".application.IAQApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.IAQSplashActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.honeywell.iaq.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <activity
+            android:name=".activity.APLinkActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".activity.SendValidationCodeActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.RegisterAndForgotPwdActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name=".activity.IAQSetPasswordActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.MyIaqActivity"
+            android:label="@string/title_activity_my_iaq"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MyIaqActivity2"
+            android:label="@string/title_activity_my_iaq"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup1Activity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup2Activity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup3Activity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup4Activity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup5Activity"
+            android:label="@string/iaq_network"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NetworkSetup6Activity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".smartlink.control.Gen2ApActivity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".smartlink.control.Gen2SetupActivity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.IAQNetworkSetupFailActivity"
+            android:label="@string/iaq_network"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.NameIAQActivity"
+            android:label="@string/name_iaq"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EditHomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.StandbyActivity"
+            android:label="@string/iaq_standby"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SleepModeActivity"
+            android:label="@string/setting_sleep_mode"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.honeywell.iaq.activity.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.honeywell.iaq.activity.OutdoorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_my_iaq"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".activity.MipcaActivityCaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activity.APLinkProgressActivity"
+            android:label="@string/iaq_cloud_connect"></activity>
+        <activity android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.DataExplainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".clock.control.ClockSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".clock.control.ClockEditActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".clock.control.ClockHourActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".clock.control.ClockWeekActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.honeywell.iaq.activity.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".activity.TestActivity"/>
+        <activity
+            android:name=".smartlink.control.SmartLinkSetupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <service
+            android:name=".service.WebSocketClientService"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="com.honeywell.iaq.ACTION_OPEN_WSS" />
+                <action android:name="com.honeywell.iaq.ACTION_GET_IAQ_DATA" />
+                <action android:name="com.honeywell.iaq.ACTION_DISCONNECT" />
+                <action android:name="com.honeywell.iaq.ACTION_SEND_PWD" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".db.IAQProvider"
+            android:authorities="com.honeywell.iaq.db.IAQProvider"
+            android:exported="false" />
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="4c85ea65f4eb77b02f9ca8c510ab4a3f"/>
+    </application>
+
+</manifest>

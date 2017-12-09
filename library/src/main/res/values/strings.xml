@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">HoneywellLibrary</string>
+    <string name="password_title">Please input password</string>
+    <string name="voice_tip">Start Voice Control. Speak the name or action of your device you want to control loudly，\n egc：“Home”.</string>
+    <string name="voice_tip2">Not yet Catch, please try again.</string>
+
+    <string name="weekdays_never">never</string>
+    <string name="weekdays_everyday">everyday</string>
+    <string name="weekdays_weekend">weekend</string>
+    <string name="weekdays_workday">workday</string>
+
+    <string name="week_monday">Monday</string>
+    <string name="week_tuesday">Tuesday</string>
+    <string name="week_wednesday">Wednesday</string>
+    <string name="week_thursday">Thursday</string>
+    <string name="week_friday">Friday</string>
+    <string name="week_saturday">Saturday</string>
+    <string name="week_sunday">Sunday</string>
+    <!--pickerview start-->
+    <string name="pickerview_cancel">Cancel</string>
+    <string name="pickerview_submit">Confirm</string>
+    <string name="pickerview_year">Year</string>
+    <string name="pickerview_month">Month</string>
+    <string name="pickerview_day">Day</string>
+    <string name="pickerview_hours">Hour</string>
+    <string name="pickerview_minutes">Minutes</string>
+    <string name="pickerview_seconds">Second</string>
+    <!--pickerview end-->
+    <!--qrcode start-->
+    <string name="scan_qrcode">Focus on the QR code in center</string>
+    <string name="scanr">Scan</string>
+    <string name="scan_qr">QR code</string>
+    <string name="scan_one">Bar code</string>
+    <string name="scan_help">Help</string>
+    <string name="scan_scan">Scan</string>
+    <string name="scan_result">Scan result</string>
+    <string name="scan_content">CUBE info</string>
+    <string name="scan_back">Back</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">Confirm</string>
+    <string name="msg_camera_framework_bug">Sorry，Android is in using. Restart device is needed</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Meta data</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="action_settings">Settings</string>
+    <string name="input_eq_hint">Please enter a two-dimensional code or bar code</string>
+    <string name="invalid_result">Invalid result</string>
+    <string name="manual_input">Input SN</string>
+    <string name="open_flashlight">Turn on the flash</string>
+    <string name="invalid_barcode">Invalid QR/bar Code</string>
+    <!--qrcode end-->
+</resources>

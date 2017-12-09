@@ -1,0 +1,14 @@
+McAfee Security for Microsoft Exchange 8.0 Alert - McAfee Security for Microsoft Exchange discovered a problem with the following e-mail.
+BLOCKED FILE ALERT
+
+McAfee Security for Microsoft Exchange discovered a problem with the following email. See Honeywell Infrastructure Standards for further information.
+
+Rule: Banned file extension/type/size
+Reason:  
+Context: 'gradlew.bat'
+
+Copyright © 1993-2009, Networks Associates Technology, Inc.
+All Rights Reserved.
+http://www.mcafeesecurity.com
+
+See HONEYWELL SECURITY POLICY for further information. Copyright © 1999-2007 McAfee, Inc.All Rights Reserved.http://www.mcafee.com

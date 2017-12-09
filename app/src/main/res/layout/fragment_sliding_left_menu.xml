@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222222">
+
+
+    <ListView
+        android:id="@+id/list_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="100dp"
+        android:background="#202020"
+        android:divider="@drawable/list_divider_dark"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.honeywell.iaq.widget.SoftInputAdjustTopView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_network_setup5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/layout_header"/>
+
+    <TextView
+        android:id="@+id/title_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:text="@string/press_power_to_open"
+        android:textSize="@dimen/network_setup_body_font_size"/>
+
+    <ImageView
+        android:id="@+id/image_wifi_settings"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/title_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/smartlink_ap"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_wifi_settings"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/network_setup_textview_top"
+        android:text="@string/wifi_flash"
+        android:textSize="@dimen/network_setup_body_font_size"/>
+
+    <Button
+        android:id="@+id/btn_connect"
+        style="@style/bottom_button_style"
+        android:text="@string/connect"/>
+
+</com.honeywell.iaq.widget.SoftInputAdjustTopView>

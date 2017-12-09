@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ESToolsThemeParent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHighlight">#9957687c</item>
+        <item name="android:popupMenuStyle">@style/Theme.PopupMenu</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">
+            @android:style/Widget.Holo.Light.ListView.DropDown
+        </item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="Theme.PopupMenu" parent="@android:style/Widget.Holo.Light.PopupMenu">
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:dividerVertical">@null</item>
+        <item name="android:dividerHorizontal">@null</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

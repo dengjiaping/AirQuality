@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="@color/header_background">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:scaleType="fitXY"/>
+    <!--android:layout_toLeftOf="@+id/iv_right"-->
+    <!--android:layout_toRightOf="@+id/iv_left"-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="21sp"/>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider_style"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_divider_color"/>
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':asynchttp', ':library', ':uitesting', ':com.honeywell.net'
